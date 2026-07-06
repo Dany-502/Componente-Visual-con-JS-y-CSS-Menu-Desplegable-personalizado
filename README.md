@@ -91,12 +91,15 @@ document.getElementById('btn-enviar').addEventListener('click', () => {
 ## Capturas de Pantalla
 
 * **Formulario con los menús en estado inicial:**
+  
   ![Menú Cerrado](img/ComponenteSinUsar.png)
 
 * **Menú abierto desplegando opciones:**
-  ![Menú Abierto](img/ComponenteDesplegado.png)
+
+   ![Menú Abierto](img/ComponenteDesplegado.png)
 
 * **Alerta mostrando los datos recolectados exitosamente:**
+
   ![Resultado](img/Final.png)
 
 ---
