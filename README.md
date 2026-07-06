@@ -4,6 +4,7 @@
 * **Carrera:** Ingeniería en Sistemas Computacionales
 * **Materia:** Programación Web
 * **Estudiante:** Rodriguez Juarez Jose Daniel
+* **No.Control:** 22161222
 * **Grupo:** 7SC
 * **GitHub Pages:**
 
@@ -90,16 +91,21 @@ document.getElementById('btn-enviar').addEventListener('click', () => {
 ## Capturas de Pantalla
 
 * **Formulario con los menús en estado inicial:**
+  
   ![Menú Cerrado](img/ComponenteSinUsar.png)
 
 * **Menú abierto desplegando opciones:**
-  ![Menú Abierto](img/ComponenteDesplegado.png)
+
+   ![Menú Abierto](img/ComponenteDesplegado.png)
 
 * **Alerta mostrando los datos recolectados exitosamente:**
+
   ![Resultado](img/Final.png)
 
 ---
 
 ## Video Demo Promocional 
+https://github.com/user-attachments/assets/074defc9-41c7-49d9-aa6f-16123f6e5af7
+
 
 
