@@ -45,21 +45,19 @@ body {
     color: #555;
     font-size: 16px;
     pointer-events: none;
-    /* Para prevenir que textos largos rompan el botón en móviles */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    flex: 1; /* Permite que el texto tome el espacio disponible */
+    flex: 1;
     margin-right: 10px;
 }
 
 img.flecha {
     width: 16px;
     transition: transform 0.3s ease;
-    flex-shrink: 0; /* Evita que la flecha se deforme o desaparezca si el espacio es muy pequeño */
+    flex-shrink: 0;
 }
 
-/* El JS le añade la clase 'flecha' al div al hacer clic, la usamos para girar la imagen */
 .listaBoton.flecha img {
     transform: rotate(180deg);
 }
