@@ -87,7 +87,7 @@ document.getElementById('btn-enviar').addEventListener('click', () => {
 
 ---
 
-## 📸 Capturas de Pantalla
+## Capturas de Pantalla
 
 * **Formulario con los menús en estado inicial:**
   ![Menú Cerrado](img/ComponenteSinUsar.png)
@@ -100,6 +100,6 @@ document.getElementById('btn-enviar').addEventListener('click', () => {
 
 ---
 
-## 🎥 Video Demo Promocional (Guion Sugerido)
+## Video Demo Promocional 
 
 
