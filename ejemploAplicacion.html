@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Formulario</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/ejemploAplicacion.css">
+    <link rel="stylesheet" href="css/visualesComponente.css">
+    <script src="js/funcionesComponente.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Contenedor principal que contiene el contenido del formulario -->
+    <div class="contenedor-formulario">
+        <h1>Registro de Usuario</h1>
+        <p class="subtitulo">Completa tus datos para crear una nueva cuenta en la plataforma.</p>
+
+        <form id="mi-formulario">
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" placeholder="Ej. Jose Daniel">
+            </div>
+
+            <div class="grupo-doble">
+                <div class="grupo-formulario">
+                    <label>País de residencia</label>
+                    <div id="menu-pais"></div>
+
+                </div>
+
+                <div class="grupo-formulario">
+                    <label>Rol principal</label>
+                    <div id="menu-rol"></div>
+
+                </div>
+            </div>
+
+            <div class="grupo-formulario" style="margin-top: 15px;">
+                <label for="mensaje">Cuéntanos brevemente sobre ti</label>
+                <textarea id="mensaje" rows="3" placeholder="Descripción..."></textarea>
+            </div>
+
+            <div class="grupo-botones" style="margin-top: 25px;">
+                <button type="button" class="boton" id="btn-enviar" style="width: 100%;">Crear Cuenta</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Realizamos un script con las funciones del componente visual para agregarlo al formulario -->
+    <script>
+        /*Menu de paises*/
+        crearMenu("menu-pais", "Seleccionar...", [
+            "México",
+            "España",
+            "Colombia",
+            "Argentina",
+            "Chile",
+            "Perú"
+        ], "#0f172a", "#f8fafc");
+
+        /*Menu de roles*/
+        crearMenu("menu-rol", "Seleccionar...", [
+            "Desarrollador Frontend",
+            "Desarrollador Backend",
+            "Diseñador UI/UX",
+            "Project Manager",
+            "Estudiante"
+        ], "#0f172a", "#f8fafc");
+
+        /*Demosstracion de la funcion de recoleccion de datos que ofrece el componente visual*/
+        document.getElementById('btn-enviar').addEventListener('click', () => {
+            const nombre = document.getElementById('nombre').value;
+            const pais = obtenerValorMenu("menu-pais");
+            const rol = obtenerValorMenu("menu-rol");
+            if (!pais || !rol) {
+                alert("Por favor, asegúrate de seleccionar un país y un rol usando los menús desplegables.");
+                return;
+            }
+            /*Si todo esta bien, se mostrara una alerta con el contenido ingresado por el usuario*/
+            alert(`¡Registro Exitoso!\n\n Nombre: ${nombre || 'Sin nombre'}\n País: ${pais}\n Rol: ${rol}`);
+        });
+    </script>
+</body>
+
+</html>
