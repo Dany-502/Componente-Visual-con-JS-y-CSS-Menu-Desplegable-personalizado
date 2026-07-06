@@ -101,3 +101,14 @@ textarea:focus {
     gap: 15px;
     margin-top: 10px;
 }
+
+@media (max-width: 600px) {
+    .grupo-doble {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contenedor-formulario {
+        padding: 25px 20px;
+    }
+}
