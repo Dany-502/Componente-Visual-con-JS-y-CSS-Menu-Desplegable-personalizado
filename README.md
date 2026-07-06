@@ -6,7 +6,7 @@
 * **Estudiante:** Rodriguez Juarez Jose Daniel
 * **No.Control:** 22161222
 * **Grupo:** 7SC
-* **GitHub Pages:**
+* **GitHub Pages:** https://dany-502.github.io/Componente-Visual-con-JS-y-CSS-Menu-Desplegable-personalizado/
 
 ---
 ## ¿Qué problema resuelve?
